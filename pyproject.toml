@@ -7,7 +7,11 @@ authors = [
     { name = "khurkat", email = "kanhiya.hurkat@sacumen.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "langchain>=1.4.6",
+    "langchain-google-genai>=4.4.2",
+    "langgraph>=1.2.16",
+]
 
 [project.scripts]
 data-agents = "data_agents:main"

@@ -1,1 +1,4 @@
 uv
+langchain
+langchain-google-genai
+langgraph
