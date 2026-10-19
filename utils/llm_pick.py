@@ -8,7 +8,7 @@ def pick_llm(level: str):
     Picks the appropriate LLM based on the level of the question
 
     Args:
-        level (str): The level of the question, can be 
+        level (str): The level of the question, can be low, medium or high
 
     Returns:
         str: The name of the LLM to be used.
