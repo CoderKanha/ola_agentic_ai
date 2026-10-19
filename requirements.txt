@@ -2,3 +2,5 @@ uv
 langchain
 langchain-google-genai
 langgraph
+pydantic
+dotenv
