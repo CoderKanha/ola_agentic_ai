@@ -4,3 +4,5 @@ langchain-google-genai
 langgraph
 pydantic
 dotenv
+psycopg2
+psycopg2-binary

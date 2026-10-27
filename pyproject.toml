@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 authors = [
-    { name = "khurkat", email = "kanhiya.hurkat@sacumen.com" }
+    { name = "Kanhiya Hurkat", email = "hkanhiya123@gmail.com" }
 ]
 requires-python = ">=3.14"
 dependencies = [
@@ -12,6 +12,7 @@ dependencies = [
     "langchain>=1.4.6",
     "langchain-google-genai>=4.4.2",
     "langgraph>=1.2.16",
+    "psycopg2-binary>=2.9.13",
     "pydantic>=2.14.1",
 ]
 
