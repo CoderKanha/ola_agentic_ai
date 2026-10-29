@@ -15,16 +15,14 @@ class DatabaseUtils:
             self.connection = None
 
     def schema_details(self, schema_name):
+        schema_info_content = ""
+        
+        # Setting up the connection to use cursor
+        connection = self.connection
+        cursor = connection.cursor()
+        schema_info_content = f"Database Schema: {schema_name}\n"
 
-        try:
-            schema_info_content = ""
-
-            # Setting up the connection to use cursor
-            connection = self.connection
-            cursor = connection.cursor()
-
-            schema_info_content = f"Database Schema: {schema_name}\n"
-            
+        try:            
             # Adding table name
             cursor.execute("SELECT table_name from information_schema.tables where table_schema = %s;", (schema_name,))
             table_list = cursor.fetchall()
